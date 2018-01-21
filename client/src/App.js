@@ -1,8 +1,7 @@
 import React from "react";
-import Books from "./pages/Books";
-import Detail from "./pages/Detail";
-import NoMatch from "./pages/NoMatch";
-import Nav from "./components/Nav";
+import Article from "./pages/article"
+
+
 import {
   BrowserRouter as Router,
   Route,
@@ -12,21 +11,22 @@ import {
 } from 'react-router-dom'
 
 const App = () =>
-  // //<div>
-  //   <Nav />
-  //   <Books />
-  // </div>
-  <Router>
+  <div>
+    <Article/>
+  </div>
 
-      <Switch>
-        <Route path="/home" exact component={Books}/>
-        <Route path="/books" exact component={Detail}/>
-        <Route path="/" exact component={Books}/>
+
+  // <Router>
+
+      // <Switch>
+        // <Route path="/home" exact component={Books}/>
+        // <Route path="/books" exact component={Detail}/>
+        // <Route path="/" exact component={Books}/>
 
     
-      </Switch>
+      // </Switch>
 
-  </Router>
+  // </Router>
 
 
 export default App;
