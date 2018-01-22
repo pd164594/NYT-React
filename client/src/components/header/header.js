@@ -1,8 +1,8 @@
 import React from "react";
 
 
-const Header = () => 
-	<div className="container">
+const Header = props => 
+	<div className="container-fluid">
   		<div className="jumbotron">
     <h1>Bootstrap Tutorial</h1> 
     <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing
