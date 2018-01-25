@@ -29,7 +29,7 @@ In this activity, you'll create a new React-based rendition of the New York Time
      }
      ```
 
-5. Create a Node/Express/MongoDB/ReactJS app called `nytreact`. This will be a recreation of the [NYT Articles Search](https://nytarticle-search-fsf.herokuapp.com/) exercise application we built back in [Week 6](../../../06-ajax/01-Activities/16-NYTSearch/Solved/NYTArticleSearch_Best_Solution/nyt-example.html). Running this application will:
+5. Create a Node/Express/MongoDB/ReactJS app called `nytreact`. This will be a recreation of the [NYT Articles Search](https://nytarticle-search-fsf.herokuapp.com/) exercise application we built back in [Week 6](../../../06cdyarn-ajax/01-Activities/16-NYTSearch/Solved/NYTArticleSearch_Best_Solution/nyt-example.html). Running this application will:
 
    * Create a Bootstrap layout similar to that displayed in [HW_Assignment.png](HW_Assignment.png). This should be a SPA (Single Page Application) that uses [`react-router-dom`](https://github.com/reactjs/react-router) to navigate, hide and show your React components without changing the route within Express.
 
