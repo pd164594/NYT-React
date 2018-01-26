@@ -8,26 +8,24 @@ import API from "../utils/API";
 class Articles extends Component {
 
 state = {
-  articles =[],
-  title: "",
-  date: "",
-  url: ""
+  articles: []
 };
 
 componentDidMount(){
-
+  this.loadArticles();
 };
 
 loadArticles = () => {
   API.getArticles()
     .then(res =>
-      this.setState({article: res.data, title:"", date:"",url:""})
+      this.setState({articles: res.data, title:"", date:"",url:""})
       )}
 
 
  
 
   render() {
+    let articles = this.state.articles.map(item => <p>Title: {item.title}</p>);
 
     return (
       <div>
@@ -35,7 +33,9 @@ loadArticles = () => {
          <Search/>
          <Results>
           <h1>
-            {this.state.article.title} published on {this.state.article.date}
+            {
+              this.state.articles && articles
+            }
           </h1>
          </Results>
          <Footer/>
